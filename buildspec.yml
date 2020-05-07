@@ -35,7 +35,7 @@ phases:
       - echo $REPOSITORY_URI
       - echo $TAG
       - docker build --tag $REPOSITORY_URI: $TAG .
-
+ 
   post_build:
     commands:
       - docker push $REPOSITORY_URI:$TAG
